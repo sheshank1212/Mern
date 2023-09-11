@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+       .btn {
+        position: relative;
+         left: -85px;
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            width: 200px;
+            margin: 6px;
+            height: 85px;
+        }
+        .sid{
+            display: grid;
+            grid-template-columns: 3fr;
+        }
+        #b1{
+            background-color: green;
+
+        }
+        #b3{
+            background-color: skyblue;
+        }
+        #b4{
+            background-color: brown;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.1); /* Makes the button 10% bigger on hover */
+        }
+        .head{
+            text-align: center;
+        }
+        .jk{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="head">Hoverable Sidenav Buttons</h1>
+    <p class="jk">Hover over the button in the left navigation to open</p>
+    <div class="sid">
+    <button class="btn" id="b1">button</button><button class="btn" id="b2">button</button><button class="btn" id="b3">button</button><button class="btn" id="b4">button</button>
+</div>
+</body>
+</html>

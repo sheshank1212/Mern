@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            width: 1100px;
+            grid-template-rows: 2fr 2fr 2fr 2fr 2fr 4fr 2fr 2fr 8fr;
+        }
+
+        .box {
+            border: 2px solid;
+            padding: 6px;
+            
+            
+        }
+        .grid1{
+            display: grid;
+            width: 1100px;
+        }
+        .box1{
+            border: 2px solid;
+            padding: 6px;
+        }
+        .org{
+            border: 3px solid;
+            width: 1100px;
+        }
+        #ethnus{
+            text-align: right;
+        }
+        .btn{
+            position: relative;
+            left: 500px;
+        }
+        .heading{
+            color: blue;
+            position: relative;
+            left: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Registration form</h1>
+    <div class="org">
+    <div class="grid">
+        <div class="box"><label for="Firstname">Firstname</label></div>
+        <div class="box"></div>
+        <div class="box"><label for="Lastname">Lastname</label></div>
+        <div class="box"></div>
+        <div class="box"><label for="Email">Email</label></div>
+        <div class="box"></div>
+        <div class="box"><label for="pasword">pasword</label></div>
+        <div class="box"></div>
+        <div class="box"><label for="repasword">re-enter pasword</label></div>
+        <div class="box"></div>
+        <div class="box"><label for="gender">gender</label></div>
+        <div class="box"> Male<input type="radio" name="mygender"> Female<input type="radio" name="mygender"></div>
+        <div class="box"><label for="Age">Age</label></div>
+        <div class="box"></div>
+        <div class="box"><label for="phone number">Phone Number</label></div>
+        <div class="box"></div>
+        <div class="box"><label for="Address">Address</label></div>
+        <div class="box"></div>
+        <div class="box"><label for="state">State</label></div>
+        <div class="box"></div>
+        <div class="box"><label for="country">Country</label></div>
+        <div class="box">
+            <select name="country" id="country">
+                <option value="asia">India</option>
+                <option value="europe">France</option>
+            </select>
+        </div>
+        <div class="box"><label for="Languages Known">Languages Known</label></div>
+        <div class="box">
+            <input type="checkbox" name="English">English
+            <input type="checkbox" name="Kannada">Kannada
+            <input type="checkbox" name="Hindhi">Hindi
+            <input type="checkbox" name="Telugu">Telugu
+        </div>
+        
+    </div>
+    <div class="grid1">
+        <div class="box1"> <input type="checkbox" name="approval">Here by I declare all the given details are true</div>
+        <div class="box1" id="ethnus">Log in to <a href="https://ethnus.com/" target="_blank">Ethnus</a>website</div>
+        
+    </div>
+</div>
+<div class="btn"><button>Register</button></div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+      
+        .grid-container {
+            display: flex;
+            justify-content: center; 
+           
+            
+            padding: 20px; 
+            position: relative;
+    width: 530px;
+    left: 500px;
+    top: 180px;
+    background-color: rgb(121, 43, 43);
+        }
+
+        #grid-1, #grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1;
+            width: 250px;
+        }
+
+        .box {
+            text-align: center;
+            margin: 6px;
+        }
+
+        #btn {
+            border: 3px;
+            margin: 3px;
+            padding: 6px;
+        }
+
+        .about {
+            height: 60px;
+        }
+        .main{
+            background-color:brown ;
+            height: 700px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    <div class="grid-container">
+        <div id="grid-1">
+            <div class="box"><label for="Name">Full Name:</label></div>
+            <div class="box"><label for="Email">Email</label></div>
+            <div class="box"><label for="password">Password:</label></div>
+            <div class="box"><label for="password">Re Password:</label></div>
+            <div class="box"><label for="gender">Gender</label></div>
+            <div class="box"><label for="Language">Language</label></div>
+            <div class="box"><label for="ZIPcode">Zipcode:</label></div>
+            <div class="box"><label for="about">About:</label></div>
+        </div>
+        <div id="grid-2">
+            <div class="box"><input type="text" placeholder="Enter your name"></div>
+            <div class="box"> <input type="text" placeholder="Enter your Email"></div>
+            <div class="box"><input type="password" id="password" name="password" placeholder="Enter your password"></div>
+            <div class="box"><input type="password" id="password" name="password" placeholder="Re Enter your password"></div>
+            <div class="box"> Male<input type="radio" name="mygender"> Female<input type="radio" name="mygender"> Others<input type="radio" name="mygender"></div>
+            <div class="box">
+                <select name="Language" id="Language">
+                    <option value="english">English</option>
+                    <option value="telugu">Telugu</option>
+                </select>
+            </div>
+            <div class="box"><input type="text" placeholder="Enter your zipcode"></div>
+            <div class="box"><input type="text" class="about" placeholder="Enter something about yourself"></div>
+            <button id="btn">Register</button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

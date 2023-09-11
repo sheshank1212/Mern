@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            position: relative;
+    left: 145px;
+        }
+
+        .profile {
+            border: 3px solid;
+            position: relative;
+            top: 40px;
+            width: 500px;
+            left: 470px;
+            padding: 20px;
+            height: 440px; /* Add padding for better spacing */
+        }
+
+        /* Style the input fields */
+        input[type="text"],
+        input[type="password"] {
+            width: 98%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        /* Style the login button */
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0077cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style the "Remember me" checkbox */
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        /* Style the "Forget password?" link */
+        #down {
+            text-align: center;
+            font-size: 14px;
+            color: #0077cc;
+            cursor: pointer;
+            position: relative;
+            top: -48px;
+    left: 200px
+        }
+
+        /* Style the "Cancel" button */
+        .downprofile button {
+            background-color:red;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+    position: relative;
+    left: 490px;
+    top: -12px;
+    width: 200px;
+        }
+
+        .downprofile button:hover {
+            background-color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <div class="img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiF-2kvtRqnSEc0NRsNlVtArm1lWV722sCm20obrLj4GjeEhFQUDBBIeqaPsmIcYJjqEEehKKWpYpZAVS5GmE5fNu73K_-I5eWBtaD_3BG_Jxy-9Ncea9w3zOzD5R1956A87HyyetROIL3w1Q0KOED1mEMWXd6qiZ-q4IvZsCAJYuAfCgRfToHrHFj49w/s622/blank-profile-picture-hd-images-photo-6.JPG" alt="">
+        </div>
+        <div><label>Username</label></div>
+        <div><input type="text" placeholder="Enter your Username"></div>
+        <div>Password</div>
+        <div><input type="password" placeholder="Enter Password"></div>
+        <button>Login</button>
+       <br>
+        <input type="checkbox">Remember me
+
+    </div>
+    <div class="downprofile">
+        <button>Cancel</button>
+        <p id="down">Forget password?</p>
+    </div>
+
+</body>
+</html>
